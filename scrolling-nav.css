@@ -39,7 +39,14 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-.about-section {
+.aboutSection1 {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.aboutProject1 {
     height: 100%;
     padding-top: 150px;
     text-align: center;
