@@ -185,6 +185,11 @@ body {
   letter-spacing: -1px;
 }
 
+.featurette-image.img-responsive.center-block{
+  width: 300px;
+  padding: 10px;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
