@@ -11,7 +11,9 @@
 	<title>Ilana Enderman</title>
 
 	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheer" type="text/css" href="./scrolling-nav.css">
 	<link rel="stylesheet" type="text/css" href="./style.css">
+
 	
    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,15 +36,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Resume</a>
+              <a class="navbar-brand page-scroll" href="#">Ilana Enderman</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                <li><a href="#contact">Contact</a></li>
                   <ul class="dropdown-menu">
                     <li><a href="#">Project 1</a></li>
                     <li><a href="#">Project 2</a></li>
@@ -74,7 +76,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Welcome</h1>
-              <p>Welcome to Ilana Enderman's webpage. <br> Here you will find all the ins and out on her projects and resume.</p>
+              <p>Welcome to Ilana Enderman's webpage. <br> Here you will find all the ins and out on her projects.</p>
+              <p><a class="btn btn-lg btn-default" href="#" role="button">projects</a></p>
             </div>
           </div>
         </div>
@@ -83,8 +86,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>About</h1>
-              <p>Ilana Enderman is a student at the B. Startup School Amsterdam. Here she studies full-stack development: Javascript, lectured by the New York Coding + Design Academy.<br> She also has a background in European Studies and loves surfing.
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p>Ilana Enderman is a student at the B. Startup School Amsterdam. Here she studies full-stack development: Javascript, lectured by the New York Coding + Design Academy.</p>
+              <p><a class="btn btn-lg btn-default" href="#" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -94,7 +97,7 @@
             <div class="carousel-caption">
               <h1>Contact</h1>
               <p>Ilana Enderman is stationed in Haarlem, The Netherlands. <br> To get in touch see her contact details.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">contact details</a></p>
+              <p><a class="btn btn-lg btn-default" href="#" role="button">contact details</a></p>
             </div>
           </div>
         </div>
@@ -117,19 +120,23 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+      	
+      	<section> <!--refer to section -->
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Project 1</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+         
         </div><!-- /.col-lg-4 -->
+
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Project 2</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
+        
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Project 3</h2>
@@ -140,9 +147,23 @@
 
 
       <!-- START THE FEATURETTES -->
+      <hr class="featurette-divider">
+    	
+      <section id="about1" class="aboutSection1">
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">About <span class="text-muted">Ilana Enderman</span></h2>
+          <p class="lead">Ilana Enderman is a student at the B. Startup School Amsterdam. Here she studies full-stack development: Javascript, lectured by the New York Coding + Design Academy.<br> She also has a background in European Studies and loves surfing.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+      </section>
 
       <hr class="featurette-divider">
 
+      <section id="project1" class="projectSection1">
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Project 1 <span class="text-muted">Javascript</span></h2>
@@ -152,9 +173,11 @@
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
+      </section>
 
       <hr class="featurette-divider">
 
+      <section id="project2" class="projectSection2">
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Project 2 <span class="text-muted">HTML</span></h2>
@@ -164,9 +187,11 @@
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
+      </section>
 
       <hr class="featurette-divider">
 
+      <section id="project3" class="projectSection3">
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Project 3 <span class="text-muted">CSS</span></h2>
@@ -176,6 +201,7 @@
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
+      </section>
 
 
       <hr class="featurette-divider">
@@ -197,6 +223,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
 	<script type="text/javascript" src="./jquery.min.js"></script>
 	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./jquery.easing.min.js"></script>
+	<script type="text/javascript" scr="./scrolling-nav.js"></script>
 	<script type="text/javascript" src="./main.js"></script>
 
   </body>

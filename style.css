@@ -33,6 +33,12 @@ body {
   width: auto;
 }
 
+.navbar {
+  background-color: teal;
+
+}
+
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -83,7 +89,7 @@ body {
 
 body {
   padding-bottom: 40px;
-  color: seagreen;
+  color: teal;
 }
 
 
@@ -112,6 +118,14 @@ body {
   width: auto;
 }
 
+.navbar-brand.page-scroll {
+  color: white;
+}
+
+.nav.navbar-nav li a{
+  color: white;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -129,7 +143,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: seagreen;
+  background-color: #777;
 }
 .carousel-inner > .item > img {
   position: absolute;
