@@ -120,10 +120,12 @@ body {
 
 .navbar-brand.page-scroll {
   color: white;
+  background-color: teal;
 }
 
 .nav.navbar-nav li a{
   color: white;
+  background-color: teal;
 }
 
 
