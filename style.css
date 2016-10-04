@@ -169,6 +169,7 @@ body {
 }
 
 
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -203,13 +204,15 @@ body {
 }
 
 .featurette-image.img-responsive.center-block{
-  width: 300px;
-  padding: 10px;
+  width: auto;
+  height: 300px; 
+  padding: 20px;
 }
 
 #contact2 {
   text-align: center;
 }
+
 
 
 /* RESPONSIVE CSS
