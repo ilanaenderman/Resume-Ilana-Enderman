@@ -24,7 +24,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
+    <div id="navigation1" class="navbar-wrapper">
       <div class="container">
 
         <nav class="navbar navbar-inverse navbar-static-top">
@@ -40,16 +40,17 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
+              <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about1.page-scroll">About</a></li>
+                <li><a class= "page-scroll" href="#about1">About</a></li>
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#project1">Project 1</a></li>
-                    <li><a href="#project2">Project 2</a></li>
-                    <li><a href="#project3">Project 3</a></li>
+                    <li><a class= "page-scroll" href="#project1">Project 1</a></li>
+                    <li><a class= "page-scroll" href="#project2">Project 2</a></li>
+                    <li><a class= "page-scroll" href="#project3">Project 3</a></li>
                   </ul>
-                  <li><a href="#contact1">Contact</a></li>
+                  <li><a class="page-scroll" href="#contact1">Contact</a></li>
                 </li>
               </ul>
             </div>
@@ -72,32 +73,32 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="image" alt="First slide">
+          <img class="first-slide" src="fruit.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Welcome</h1>
-              <p>Welcome to Ilana Enderman's webpage. <br> Here you will find all the ins and out on her projects.</p>
-              <p><a class="btn btn-lg btn-default" href="#project1" role="button">projects</a></p>
+              <p id="carousel1">Welcome to Ilana Enderman's webpage. <br> Here you will find all the ins and out on her projects.</p>
+              <p><a class="btn btn-lg btn-default page-scroll" href="#project1" role="button">projects &raquo;</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="image" alt="Second slide">
+          <img class="second-slide" src="fruit.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>About</h1>
-              <p>Ilana Enderman is a student at the B. Startup School Amsterdam. Here she studies full-stack development: Javascript, lectured by the New York Coding + Design Academy.</p>
-              <p><a class="btn btn-lg btn-default" href="#about1" role="button">Learn more</a></p>
+              <p id="carousel2">I am a student at the B. Startup School Amsterdam.<br>Here I learn full-stack development: Javascript, lectured by<br>the New York Coding + Design Academy.</p>
+              <p><a class="btn btn-lg btn-default page-scroll" href="#about1" role="button">Learn more &raquo;</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="image" alt="Third slide">
+          <img class="third-slide" src="fruit.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Contact</h1>
-              <p>To get in touch <br> See her contact details.</p>
-              <p><a class="btn btn-lg btn-default" href="#contact1" role="button">contact details</a></p>
+              <p id=carousel3>To get in touch see contact details.</p>
+              <p><a class="btn btn-lg btn-default page-scroll" href="#contact1" role="button">contact details &raquo;</a></p>
             </div>
           </div>
         </div>
@@ -126,7 +127,7 @@
           <img class="img-circle" src="fruit.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Project 1</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#project1" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default page-scroll" href="#project1" role="button">View details &raquo;</a></p>
          
         </div><!-- /.col-lg-4 -->
 
@@ -134,14 +135,14 @@
           <img class="img-circle" src="fruit.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Project 2</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#project2" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default page-scroll" href="#project2" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         
         <div class="col-lg-4">
           <img class="img-circle" src="fruit.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Project 3</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#project3" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default page-scroll" href="#project3" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -154,7 +155,7 @@
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">About <span class="text-muted">Ilana Enderman</span></h2>
           <p class="lead">My name is Ilana Enderman and I am a student at the B. Startup School Amsterdam studying full-stack development: Javascript, lectured by the New York Coding + Design Academy. My background is in European Studies, specialized in European Economics and Policy, with a minor in Spanish. As an Europe expert I am interested in social issues, in particular sustainability. Other interests of mine are traveling and surfing, often combined.</p>
-          <p class="btn btn-default"><a href="#">Back to top</a></p>
+          <p><a class="btn btn-default page-scroll" href="#navigation1">Back to top &raquo;</a></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" src="ilana.jpg" alt="Generic placeholder image">
@@ -169,7 +170,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Project 1 <span class="text-muted">Javascript</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.<br><br>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          <p class="btn btn-default"><a href="#">Back to top</a></p>
+          <p><a class="btn btn-default page-scroll" href="#navigation1">Back to top &raquo;</a></p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block" src="fruit.jpg" alt="Generic placeholder image">
@@ -184,7 +185,7 @@
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Project 2 <span class="text-muted">HTML</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.<br><br>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          <p class="btn btn-default"><a href="#">Back to top</a></p>
+          <p><a class="btn btn-default page-scroll" href="#navigation1">Back to top &raquo;</a></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" src="fruit.jpg" alt="Generic placeholder image">
@@ -199,7 +200,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">Project 3 <span class="text-muted">CSS</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.<br><br>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          <p class="btn btn-default"><a href="#">Back to top</a></p>
+          <p><a class="btn btn-default page-scroll" href="#navigation1">Back to top &raquo;</a></p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block" src="fruit.jpg" alt="Generic placeholder image">
@@ -210,9 +211,9 @@
 
     	<section id="contact1" class="contactSection1">
         <div class="row featurette">
-        <div class="col-md-7">
+        <div id="contact2" class="col-md">
           <h2 class="featurette-heading">Contact <span class="text-muted"></span></h2>
-          <p class="lead">E-mail address <br>ilanaenderman@hotmail.com</p>
+          <p class="lead"><br>E-mail address: <br>ilanaenderman@hotmail.com</p>
         </div>
       </div>
       </section>
@@ -225,7 +226,8 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="btn btn-default"><a href="#">Back to top</a></p>
+        <p><a class="btn btn-default page-scroll" href="#navigation1">Back to top &raquo;</a></p>
+        <p><br></p>
         <p> &copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
