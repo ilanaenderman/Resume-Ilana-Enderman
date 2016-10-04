@@ -186,11 +186,11 @@ body {
 /*-- Experience ------------------*/
 
 #carreer {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 #education {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 
@@ -224,12 +224,12 @@ body {
 
 #mail{
   font-size: 20px;
-  color: teal;
+  color: grey;
 }
 
 #linkedin{
   font-size: 20px;
-  color: teal;
+  color: grey;
 }
 
 /* RESPONSIVE CSS
