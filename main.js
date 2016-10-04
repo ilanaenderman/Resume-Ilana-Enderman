@@ -1,9 +1,9 @@
-// drop down navbar -------------------
+// drop down navbar ------------------------
 
 $('.dropdown-toggle').dropdown()
 console.log
 
-// Skill bar -------------------------
+// Skill bar -------------------------------
 jQuery(document).ready(function(){
 	jQuery('.skillbar').each(function(){
 		jQuery(this).find('.skillbar-bar').animate({
@@ -13,7 +13,7 @@ jQuery(document).ready(function(){
 });
 
 
-// Pop up Zoom ----------------------------
+// Pop up Zoom -----------------------------
 $('.without-caption').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
