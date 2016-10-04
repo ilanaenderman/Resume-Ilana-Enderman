@@ -1,2 +1,2 @@
 $('.dropdown-toggle').dropdown()
-console.log('Hello')
+console.log

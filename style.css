@@ -215,6 +215,7 @@ body {
 
 
 
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -253,6 +254,18 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+/* mail------------------------ */
+
+#mail{
+  font-size: 20px;
+  color: teal;
+}
+
+#linkedin{
+  font-size: 20px;
+  color: teal;
 }
 
 
