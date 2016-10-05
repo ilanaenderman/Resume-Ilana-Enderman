@@ -15,9 +15,9 @@ jQuery(document).ready(function(){
 
 // Pop up Zoom -----------------------------
 $('.without-caption').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
-		closeBtnInside: false,
+	type: 'image',
+	closeOnContentClick: true,
+	closeBtnInside: false,
 		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
 		image: {
 			verticalFit: true
@@ -29,17 +29,17 @@ $('.without-caption').magnificPopup({
 	});
 
 $('.with-caption').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-			titleSrc: function(item) {
-				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-			}
-		},
-		zoom: {
-			enabled: true
+	type: 'image',
+	closeOnContentClick: true,
+	closeBtnInside: false,
+	mainClass: 'mfp-with-zoom mfp-img-mobile',
+	image: {
+		verticalFit: true,
+		titleSrc: function(item) {
+			return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
 		}
-	});
+	},
+	zoom: {
+		enabled: true
+	}
+});
