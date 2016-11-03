@@ -13,14 +13,16 @@
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/landing-page.css">
-    <link rel="stylesheer" type="text/css" href="css/scrolling-nav.css">
+    <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css">
+    <link rel="stylesheet" type="text/css" href="css/freelancer.min.css">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" type="text/css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,7 +61,7 @@
                         <a class="page-scroll" href="#abilities">Abilities</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact1">Contact</a>
@@ -115,7 +117,7 @@
                     <div class="clearfix"></div>
 
                     <h2 class="featurette-heading">About <span class="text-muted">Ilana Enderman</span></h2>
-                    <p class="lead"><br>I am a student at the B. Startup School Amsterdam studying full-stack development: Javascript, lectured by the New York Coding + Design Academy. My background is in European Studies, specialized in European Economics and Policy, with a minor in Spanish.<br><br>As an Europe expert I am interested in social issues, in particular sustainability and development. Other interests of mine are traveling and surfing, often combined.</p>
+                    <p class="lead"><br>I am a student at the B. Startup School Amsterdam studying full-stack development: Javascript, lectured by the New York Coding + Design Academy. My background is in European Studies, specialized in European Economics and Policy, with a minor in Spanish.<br><br>As a Europe expert I am interested in social issues, in particular sustainability and development. Other interests of mine are traveling and surfing, often combined.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/ilana.jpg" alt="">
@@ -255,7 +257,7 @@
             </div>
 
             <div class='col-lg-3'>
-                <i class="devicon-react-original-wordmark"></i>
+                <i class="devicon-postgresql-plain-wordmark"></i>
             </div>
             <div class='col-lg-3'>
                 <i class="devicon-bootstrap-plain-wordmark"></i>
@@ -267,58 +269,81 @@
 </div>
  <!-- /.container -->
 
- <!-- /.Projects -->
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="content-section-b">
+        <div class="container">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
 
- <div id="projects" class="content-section-b">
+            <h2 class="featurette-heading">Projects <span class="text-muted">NYCDA</span></h2>
+            <p class="lead"><br></p>
 
-    <div class="container">
 
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-        <h2 class="featurette-heading">Projects <span class="text-muted">NYCDA</span></h2>
-        <p class="lead"><br></p>
-
-        <!-- Three columns of tekst for project -->
-
-        <!--refer to section -->
-        
-        <!--fizzbuzz-->
-        <div class="col-lg-4">
-            <a href="https://lauraxiulan.github.io/guesthouse-website/index.html" class="without-caption image-link" title="Fizzbuzz">
-            <img class="img-circle" src="img/guesthouse.jpg" width="250" height="250">
-            </a>
-            <h2 class="laura">Business Website</h2>
-            <p class="lead">Together with <a class="laura" href="https://lauraxiulan.github.io/personal-website/">Laura</a> I created a business website for a non-existent guesthouse as an assignment for the NYCDA course. For now it is still a static website withoud back-end.</p> 
-        </div><!-- /.col-lg-4 -->
-
-       <!--library-->
-        <div class="col-lg-4">
-            <img id="myImg" class="img-circle" src="img/country-app.jpg" width="250" height="250">
-            <div id="myModal" class="modal">
-            <span class="close" onclick="document.getElementById('myModal').style.display='none'" style="font-size: 40px; margin-right: 10px; color: teal; opacity: 0.8;">&times;</span>
-            <img class="modal-content" id="img01" style="width: 90%; margin-top: 1%;">
-            <div id="caption"></div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                </div>
             </div>
-            <h2 class="laura">Country Information App</h2>
-            <p class="lead">With Node.js I made a country information app. This app will print the country name and Top Level Domain of the country you have chosen.</p>
-        </div><!-- /.col-lg-4 -->
-
-    <!--prototype-->
-         <div class="col-lg-4">
-            <img id="myImg2" class="img-circle" src="img/fruit.jpg" width="250" height="250">
-            <div id="myModal2" class="modal">
-            <span class="close" onclick="document.getElementById('myModal2').style.display='none'" style="font-size: 40px; margin-right: 10px; color: teal; opacity: 0.8;">&times;</span>
-            <img class="modal-content" id="img02" style="width: 62%; margin-top: 1%;">
-            <div id="caption2"></div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/fruit.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Business Website</h4>
+                        <p class="text-muted">Ola Onda Guesthouse</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/fruit.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Application</h4>
+                        <p class="text-muted">Country Information</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/fruit.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Application</h4>
+                        <p class="text-muted">User Information</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/fruit.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Application</h4>
+                        <p class="text-muted">Bulletin Board</p>
+                    </div>
+                </div>
             </div>
-            <h2 class="laura">User Information App</h2>
-            <p class="lead">For this project I created an user information app with Node.js and Pug. It is able to search and add users.</p>
-        </div><!-- /.col-lg-4 -->
-</div><!-- /.row -->
+        </div>
+    </section>
 
-
-
-</div>
 <!-- /.container -->
 
 <div id ="contact1" class="content-section-c">
@@ -358,15 +383,155 @@
     </div>
 </footer>
 
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Business Website</h2>
+                            <hr class="star-primary">
+                            <img src="img/fruit.jpg" class="img-responsive img-centered" alt="">
+                            <p class="lead">Together with <a class="laura" href="https://lauraxiulan.github.io/personal-website/">Laura</a> I created a business website for a non-existent guesthouse as an assignment for the NYCDA course. For now it is still a static website withoud back-end.</p> 
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <a>October 2016</a>
+                                </li>
+                                <li>Github:
+                                    <strong><a href="https://github.com/ilanaenderman/guesthouse-website">Code</a>
+                                    </strong>
+                                </li>
+                                <li>Website:
+                                    <strong><a href="https://lauraxiulan.github.io/guesthouse-website/guesthouse.html">Ola Onda Guesthouse</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Country Information App</h2>
+                            <hr class="star-primary">
+                            <img src="img/fruit.jpg" class="img-responsive img-centered" alt="">
+                            <p class="lead">With Node.js and Express I made a country information app. This app will print the country name and Top Level Domain of the country you have chosen.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <a href="http://startbootstrap.com">October 2016</a>
+                                </li>
+                                <li>Github:
+                                    <strong><a href="https://github.com/ilanaenderman/hulahuping-koala/tree/master/app">Code</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>User Information App</h2>
+                            <hr class="star-primary">
+                            <img src="img/fruit.jpg" class="img-responsive img-centered" alt="">
+                            <p class="lead">For this project I created a user information app with Node.js, Ajax and Pug. It is able to search and add users.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <a>October 2016</a>
+                                </li>
+                                <li>Github:
+                                    <strong><a href="https://github.com/ilanaenderman/hulahuping-koala/tree/master/user-information-app">Code</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Bulletin Board App</h2>
+                            <hr class="star-primary">
+                            <img src="img/fruit.jpg" class="img-responsive img-centered" alt="">
+                            <p class="lead">An app for writing messages. Made with Node.js, Pug and PostgresSQL</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <a>November 2016</a>
+                                </li>
+                                <li>Github:
+                                    <strong><a href="https://github.com/ilanaenderman/bulletin-app">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 <!-- jQuery -->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/scrolling-nav.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/freelancer.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
 
 
 </body>
