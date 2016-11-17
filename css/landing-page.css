@@ -21,6 +21,96 @@ h6 {
     font-weight: 700;
 }
 
+/* Navbar ---------------- */
+.navbar-custom {
+  background-color: #222222;
+  border-color: transparent;
+}
+
+/* Color logo -------- */
+.navbar-custom .navbar-brand {
+  color: #208EA0;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: #208EA0;
+}
+.navbar-custom .navbar-collapse {
+  border-color: #208EA0;
+}
+.navbar-custom .navbar-toggle {
+  background-color: #208EA0;
+  border-color: #208EA0;
+  
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #208EA0;
+}
+.navbar-custom .nav li a {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* Color text navbar when mouse is on it */ 
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color: #208EA0;
+  outline: none;
+}
+/* Color navbar moving block*/
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #208EA0;
+}
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #208EA0;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+}
+
+/* Navbar color */
+@media (min-width: 768px) {
+  .navbar-custom.affix {
+    background: url(../img/navbar.jpg) no-repeat center center;
+    padding: 10px 0;
+
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
 
 /* Columns---------------- */
 
@@ -38,11 +128,11 @@ h6 {
 .title {
   font-family: sans-serif !important;
   margin-bottom: 10px;
-  color: teal !important;
+  color: #208EA0 !important;
 }
 
 .laura {
-  color: teal;
+  color: #208EA0;
 }
 
 .col-lg-4 {
@@ -133,7 +223,7 @@ h6 {
 
 .content-section-b {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
 }
@@ -162,10 +252,12 @@ h6 {
     border-top: 3px solid #e7e7e7;
 }
 
-.section-heading-spacer1 {
+#section-heading-spacer1 {
     float: center;
     width: 200px;
-    border-top: 3px solid #e7e7e7;
+    border-top: 3px solid white;
+    color: white;
+    background-color: white;
 }
 
 
@@ -226,56 +318,56 @@ h6 {
 
 
 .devicon-github-plain-wordmark {
-  color: teal;
+  color: #208EA0;
   font-size: 8em;
   display: inline-block;
   padding-bottom: 80px
 }
 
 .devicon-html5-plain-wordmark {
-  color: teal;
+  color: #208EA0;
   font-size: 8em;
   display: inline-block;
   padding-bottom: 80px
 }
 
 .devicon-css3-plain-wordmark {
-  color: teal;
+  color: #208EA0;
   font-size: 8em;
   display: inline-block;
   padding-bottom: 80px
 }
 
 .devicon-javascript-plain {
-  color: teal;
+  color: #208EA0;
   font-size: 8em;
   display: inline-block;
   padding-bottom: 80px
 }
 
 .devicon-jquery-plain-wordmark {
-  color: teal;
+  color: #208EA0;
   font-size: 8em;
   display: inline-block;
   padding-bottom: 80px
 }
 
 .devicon-nodejs-plain {
-  color: teal;
+  color: #208EA0;
   font-size: 8em;
   display: inline-block;
   padding-bottom: 80px
 }
 
 .devicon-postgresql-plain-wordmark {
-  color: teal;
+  color: #208EA0;
   font-size: 8em;
   display: inline-block;
   padding-bottom: 80px
 }
 
 .devicon-bootstrap-plain-wordmark {
-  color: teal;
+  color: #208EA0;
   font-size: 8em;
   display: inline-block;
   padding-bottom: 80px
@@ -321,7 +413,7 @@ h6 {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background-color: teal;
+  background-color: #208EA0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -600,16 +692,25 @@ fieldset[disabled] .btn-success.active {
 
 #mail{
   font-size: 20px;
-  color: teal;
+  color: #208EA0;
+  text-align: center;
 }
 
 
 
 
 footer {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background: url(../img/footer.jpg) no-repeat center center;
+    text-align: center;
 }
+
+.copyright.text-muted.small {
+  text-align: left;
+}
+
 
 p.copyright {
     margin: 15px 0 0;
